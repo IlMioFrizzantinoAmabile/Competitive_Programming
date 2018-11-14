@@ -1,3 +1,14 @@
+/* Given an array of positive integers. The task is to find the leaders in the array.
+ * An element of array is leader if it is greater than or equal to all the elements to its right side.
+ * Input:
+ * The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.
+ * The first line of each test case contains a single integer N denoting the size of array.
+ * The second line contains N space-separated integers A1, A2, ..., AN denoting the elements of the array.
+ * Output:
+ * Print all the leaders.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
