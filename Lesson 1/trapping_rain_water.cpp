@@ -7,6 +7,7 @@
  * Print the total unit of water trapped in between the blocks.
  * SOURCE: https://practice.geeksforgeeks.org/problems/trapping-rain-water/0
  */
+
 #include<bits/stdc++.h>
 
 using namespace std;
