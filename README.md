@@ -1,1 +1,1 @@
-# Competitive_Programming
+# This repository contains some algorithmic exercises for the Competitive Programming course ad UniPi
