@@ -1,3 +1,11 @@
+/* Given an array C of size N-1 and given that there are numbers from 1 to N with one element missing, the missing number is to be found.
+ * Input:
+ * The first line of input contains an integer T denoting the number of test cases.
+ * For each test case first line contains N, size of array. The second line contains N-1 array elements.
+ * Output:
+ * Print the missing number in array.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/missing-number-in-array/0
+ */
 #include<bits/stdc++.h>
 
 using namespace std;
