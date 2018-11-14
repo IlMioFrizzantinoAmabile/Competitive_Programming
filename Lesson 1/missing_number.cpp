@@ -6,6 +6,7 @@
  * Print the missing number in array.
  * SOURCE: https://practice.geeksforgeeks.org/problems/missing-number-in-array/0
  */
+
 #include<bits/stdc++.h>
 
 using namespace std;
