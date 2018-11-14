@@ -1,3 +1,12 @@
+/* Given an array A of N non-negative integers representing height of blocks at index i as Ai, where the width of each block is 1.
+ * Compute how much water can be trapped in between blocks after raining.
+ * Input:
+ * The first line of input contains an integer T denoting the number of test cases.
+ * The description of T test cases follows. Each test case contains an integer N followed by N numbers to be stored in array.
+ * Output:
+ * Print the total unit of water trapped in between the blocks.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/trapping-rain-water/0
+ */
 #include<bits/stdc++.h>
 
 using namespace std;
