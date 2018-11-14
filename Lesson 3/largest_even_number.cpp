@@ -1,3 +1,14 @@
+/* In this problem there is a number P (always a whole number) with N digits.
+ * We ask what is the largest possible even number formed by rearranging this N digit number.
+ * For example consider number 1324, after rearranging the digits the largest even number possible is 4312.
+ * Note: In case the number does not contain any even digit then output the largest odd number possible.
+ * Input:
+ * The first line of input will contain an integer T which is the no. of test cases. Each of the next T lines will contain a number P.
+ * Output:
+ * For each test case in a new line print the required result.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/largest-even-number/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
