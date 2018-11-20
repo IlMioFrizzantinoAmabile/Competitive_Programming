@@ -1,3 +1,13 @@
+/* Given a binary tree, return true if it is BST, else false.
+ * Input:
+ * The task is to complete the method which takes one argument, root of Binary Tree.
+ * The struct Node has a data part which stores the data, pointer to left child and pointer to right child.
+ * There are multiple test cases. For each test case, this method will be called individually.
+ * Output:
+ * The function should return 1 if BST else return 0.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/check-for-bst/1
+ */
+
 #include <bits/stdc++.h>
 
 using namespace std;
