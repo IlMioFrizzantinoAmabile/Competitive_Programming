@@ -1,3 +1,13 @@
+/* Given an array, write a program that prints 1 if given array can represent preorder traversal of a BST, else prints 0.
+ * Input:
+ * The first line of input contains an integer T denoting the number of test cases.
+ * The first line of each test case is N,N is the size of array.
+ * The second line of each test case contains N input A[i].
+ * Output:
+ * Should print 1 if given array can represent preorder traversal of BST. Otherwise 0.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
