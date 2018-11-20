@@ -1,3 +1,11 @@
+/* Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.
+ * Input:
+ * First line consists of T test cases. First line of every test case consists of N, denoting number of nodes. Second line of every test case consists of N Spaced 3 elements, Parent node data, child node data and position of child node( 'L'  or  'R' ).
+ * Output:
+ * Return the Maximum possible sum.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/maximum-path-sum/1
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
