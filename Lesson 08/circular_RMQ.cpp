@@ -38,10 +38,8 @@ void increase(int root, int value, int queryS, int queryE, int rangeS, int range
 		vec[root]+=value;
 		lazy[2*root+1]+=value;
 		lazy[2*root+2]+=value;
-		//cout<<"increase contenuto: "<<rangeS<<" - vec di "<<root<<" = "<<vec[root]<<endl;
 		return;
 	}
-	//cout<<"increase : "<<rangeS<<" - "<<rangeE<<endl;
 	int rangeM = (rangeS+rangeE)/2;
 	increase(2*root+1, value, queryS, queryE, rangeS, rangeM);
 	increase(2*root+2, value, queryS, queryE, rangeM+1, rangeE);
@@ -75,9 +73,6 @@ int main(){
 		int val;
 		cin>>val;
 		increase(0, val, i, i, 0, N-1);
-		//for (int j=0;j<2*N-1;j++) cout<<vec[j]<<" "; cout<<endl;
-		//for (int j=0;j<2*N-1;j++) cout<<lazy[j]<<" ";
-		//cout<<endl<<"inserito "<<val<<endl<<endl;
 	}
 	int M;
 	cin>>M;
@@ -101,9 +96,6 @@ int main(){
 				cout<<min(leftMin,rightMin)<<endl;
 			}
 		}
-		//for (int j=0;j<2*N-1;j++) cout<<vec[j]<<" "; cout<<endl;
-		//for (int j=0;j<2*N-1;j++) cout<<lazy[j]<<" ";
-		//cout<<endl<<"------------"<<endl<<endl;
 	}
 	return 0;
 }
