@@ -1,3 +1,16 @@
+/* Parmida is a clever girl and she wants to participate in Olympiads this year.
+ * Of course she wants her partner to be clever too (although he's not)! Parmida has prepared the following test problem for Pashmak.
+ * There is a sequence a that consists of n integers a1, a2, ..., an. 
+ * Let's denote f(l, r, x) the number of indices k such that: l ≤ k ≤ r and ak = x.
+ * The task is to calculate the number of pairs of indicies i, j (1 ≤ i < j ≤ n) such that f(1, i, ai) > f(j, n, aj).
+ * Input:
+ * The first line of the input contains an integer n.
+ * The second line contains n space-separated integers a1, a2, ..., an.
+ * Output:
+ * Print a single integer, the answer to the problem.
+ * SOURCE: http://codeforces.com/problemset/problem/459/D?locale=en
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
