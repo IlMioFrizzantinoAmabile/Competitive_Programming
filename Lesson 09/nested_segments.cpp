@@ -1,3 +1,14 @@
+/* You are given n segments on a line. There are no ends of some segments that coincide.
+ * For each segment find the number of segments it contains.
+ * Input:
+ * The first line contains a single integer n, the number of segments on a line.
+ * Each of the next n lines contains two integers li and ri, the coordinates of the left and the right ends of the i-th segment.
+ * It is guaranteed that there are no ends of some segments that coincide.
+ * Output:
+ * Print n lines. The j-th of them should contain the only integer aj — the number of segments contained in the j-th segment.
+ * SOURCE: http://codeforces.com/problemset/problem/652/D?locale=en
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
