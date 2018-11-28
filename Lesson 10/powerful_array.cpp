@@ -1,3 +1,18 @@
+/* An array of positive integers a1, a2, ..., an is given. 
+ * Let us consider its arbitrary subarray al, al + 1..., ar, where 1 ≤ l ≤ r ≤ n.
+ * For every positive integer s denote by Ks the number of occurrences of s into the subarray.
+ * We call the power of the subarray the sum of products Ks·Ks·s for every positive integer s.
+ * The sum contains only finite number of nonzero summands as the number of different values in the array is indeed finite.
+ * The task is to calculate the power of t given subarrays.
+ * Input:
+ * First line contains two integers n and t, the array length and the number of queries correspondingly.
+ * Second line contains n positive integers ai, the elements of the array.
+ * Next t lines contain two positive integers l, r (1 ≤ l ≤ r ≤ n), the indices of the left and the right ends of the corresponding subarray.
+ * Output:
+ * Print t lines, the i-th line of the output should contain single positive integer, the power of the i-th query subarray.
+ * SOURCE: http://codeforces.com/contest/86/problem/D
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
