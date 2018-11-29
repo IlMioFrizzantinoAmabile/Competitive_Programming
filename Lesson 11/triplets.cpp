@@ -1,3 +1,7 @@
+/* Course Exam, 14/02/2018
+ * SOURCE: https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
