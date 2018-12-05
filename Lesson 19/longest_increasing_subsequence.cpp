@@ -1,3 +1,16 @@
+/* Given a sequence, find the length of the longest increasing subsequence from a given sequence .
+ * The longest increasing subsequence means to find a subsequence of a given sequence in which the subsequence's elements are
+ * in sorted order, lowest to highest, and in which the subsequence is as long as possible.
+ * This subsequence is not necessarily contiguous, or unique.
+ * Note: Duplicate numbers are not counted as increasing subsequence.
+ * Input:
+ * The first line contains an integer T, depicting total number of test cases. 
+ * Then following T lines contains an integer N depicting the size of array and next line followed by the value of array.
+ * Output:
+ * Print the Max length of the subsequence in a separate line.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
