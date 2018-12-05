@@ -1,3 +1,14 @@
+/* You are given an unweighted, undirected tree.
+ * The task is to find a vertex set of minimum size in this tree such that each edge has as least one of its end-points in that set.
+ * Input:
+ * The first line of the input file contains one integer N, number of nodes in the tree. 
+ * Next N-1 lines contain N-1 edges of that tree.
+ * Each line contains a pair (u, v) means there is an edge between node u and node v (1 <= u,v <= N).
+ * Output:
+ * Print number of nodes in the satisfied vertex set on one line.
+ * SOURCE: https://www.spoj.com/problems/PT07X/
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
