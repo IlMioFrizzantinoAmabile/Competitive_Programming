@@ -1,3 +1,14 @@
+/* Given an array of positive integers. The task is to print the maximum length of Bitonic subsequence. 
+ * A subsequenceof array is called Bitonic if it is first increasing, then decreasing.
+ * Input:
+ * First line contains T test cases.
+ * First line of every test case consists of N , denoting number of elements in an array.
+ * Second line of every test consists of elements in array.
+ * Output:
+ * Single line output, print the longest bitonic sequence.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
