@@ -1,3 +1,12 @@
+/* Given a String, find the longest palindromic subsequence.
+ * Input:
+ * The first line of input contains an integer T, denoting no of test cases.
+ * The only line of each test case consists of a string S (only lowercase)
+ * Output:
+ * Print the Maximum length possible for palindromic subsequence.
+ * SOURCE: https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence/0
+ */
+
 #include<bits/stdc++.h>
 
 using namespace std;
