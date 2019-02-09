@@ -1,4 +1,5 @@
-/* Mr. Alfred is the founder of FooLand Constructions.
+/* PROBLEM
+ * Mr. Alfred is the founder of FooLand Constructions.
  * He always maintains a ‘Black list’ of potential employees which can be fired at any moment without any prior notice.
  * This company has N employees (including Mr. Alfred), and each employee is assigned a rank (1 <= rank <= N) at the time of joining the company. Any person can have any rank from 1 to N. No two persons have the same rank. 
  * The company has a hierarchically organized management. Each employee has one immediate senior but can have any number of seniors.
@@ -12,6 +13,11 @@
  * Output:
  * For each test case, print in a new line the number of ‘Black listed’ employees.
  * SOURCE: https://practice.geeksforgeeks.org/problems/firing-employees/0
+ *
+ * SOLUTION
+ * L'algoritmo calcola quali sono i numeri primi tra 0 e 2n-1. Assunto che i primi abbiano densità logaritmica, questo passaggio impiega n*log(n).
+ * Con l'ausilio di una semplice stack calcola il numero di senior per ciascun impiegato, identificato con il suo rank, in tempo lineare.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
