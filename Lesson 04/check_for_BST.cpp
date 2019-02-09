@@ -1,4 +1,5 @@
-/* Given a binary tree, return true if it is BST, else false.
+/* PROBLEM
+ * Given a binary tree, return true if it is BST, else false.
  * Input:
  * The task is to complete the method which takes one argument, root of Binary Tree.
  * The struct Node has a data part which stores the data, pointer to left child and pointer to right child.
@@ -6,6 +7,13 @@
  * Output:
  * The function should return 1 if BST else return 0.
  * SOURCE: https://practice.geeksforgeeks.org/problems/check-for-bst/1
+ *
+ * SOLUTION
+ * Il problema richiede solo di scrivere la funzione isBST.
+ * L'algoritmo visita l'albero ricordandosi il massimo e il minimo visti fino a quel punto.
+ * Se il nodo in questione rispetta le regole del BST allora itera la ricerca sui figli, altrimenti ritorna 0.
+ * Diciamo che n=numero di nodi.
+ * COMPLEXITY: O(n)
  */
 
 #include <bits/stdc++.h>
