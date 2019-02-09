@@ -1,17 +1,24 @@
-/* You have an array containing n elements initially all 0.
+/* PROBLEM
+ * You have an array containing n elements initially all 0.
  * You need to do a number of update operations on it.
  * In each update you specify l, r and val which are the starting index, ending index and value to be added.
  * After each update, you add the 'val' to all elements from index l to r.
  * After 'u' updates are over, there will be q queries each containing an index for which you have to print the element at that index.
  * Input:
- * First line consists of t, the number of test cases. (1 <= t <= 10)
- * Each test case consists of "n u",number of elements in the array and the number of update operations, in the first line (1 <= n <= 10000 and 1 <= u <= 100000).
- * Then follow u lines each of the format "l r val" (0 <= l,r < n, 0 <= val <=10000).
- * Next line contains q, the number of queries. (1 <= q <= 10000).
- * Next q lines contain an index (0 <= index < n).
+ * First line consists of t, the number of test cases.
+ * Each test case consists of "n u",number of elements in the array and the number of update operations, in the first line.
+ * Then follow u lines each of the format "l r val".
+ * Next line contains q, the number of queries.
+ * Next q lines contain an index.
  * Output:
  * For each test case, output the answers to the corresponding queries in separate lines.
  * SOURCE: https://www.spoj.com/problems/UPDATEIT/
+ *
+ * SOLUTION
+ * L'algoritmo memorizza gli updates come +val e -val rispettivamente negli estremi dell'intervallo, in tempo lineare.
+ * Esegue una prefix sum di questo array, calcolando così tutte le updates contemporaneamente, in tempo lineare.
+ * Restituisce il risultato semplicemente leggendo il valore, in tempo lineare.
+ * COMPLEXITY: O(u+n+q)
  */
 
 #include<bits/stdc++.h>
