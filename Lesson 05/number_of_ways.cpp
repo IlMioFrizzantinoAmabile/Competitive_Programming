@@ -1,12 +1,19 @@
-/* You've got array a[1], a[2], ..., a[n], consisting of n integers.
+/* PROBLEM
+ * You've got array a[1], a[2], ..., a[n], consisting of n integers.
  * Count the number of ways to split all the elements of the array into three contiguous parts
  * so that the sum of elements in each part is the same.
  * Input:
- * The first line contains integer n (1 ≤ n ≤ 5·105), showing how many numbers are in the array.
- * The second line contains n integers a[1], a[2], ..., a[n] (|a[i]| ≤  109) — the elements of array a.
+ * The first line contains integer n, showing how many numbers are in the array.
+ * The second line contains n integers a[1], a[2], ..., a[n], the elements of array a.
  * Output:
  * Print a single integer — the number of ways to split the array into three parts with the same sum.
  * SOURCE: http://codeforces.com/problemset/problem/466/C?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo calcola la somma degli elementi, la divide per 3.
+ * Assegna 1 in un array ai prefissi che hanno quella somma. Calcola la prefix sum di questo array.
+ * Per ogni suffisso che ha quella somma, aggiunge a tot il numero di casi possibili.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
