@@ -1,9 +1,19 @@
-/* Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.
+/* PROBLEM
+ * Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.
  * Input:
- * First line consists of T test cases. First line of every test case consists of N, denoting number of nodes. Second line of every test case consists of N Spaced 3 elements, Parent node data, child node data and position of child node( 'L'  or  'R' ).
+ * First line consists of T test cases.
+ * First line of every test case consists of N, denoting number of nodes.
+ * Second line of every test case consists of N Spaced 3 elements, Parent node data, child node data and position of child node( 'L'  or  'R' ).
  * Output:
  * Return the Maximum possible sum.
  * SOURCE: https://practice.geeksforgeeks.org/problems/maximum-path-sum/1
+ *
+ * SOLUTION
+ * Il problema richiede solo di scrivere la funzione maxPathSum.
+ * La funzione utilizza la funzione ausiliaria maxSon, la quale visita l'albero ricorsivamente aggiornando di volta in volta il max
+ * trovato nel sottoalbero e restituendo la "profondità" massima di quel nodo.
+ * Visita ogni nodo una sola volta e lo computa in tempo costante.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
