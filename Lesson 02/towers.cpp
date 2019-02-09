@@ -1,4 +1,5 @@
-/* Little Vasya has received a young builder’s kit.
+/* PROBLEM
+ * Little Vasya has received a young builder’s kit.
  * The kit consists of several wooden bars, the lengths of all of them are known.
  * The bars can be put one on the top of the other if their lengths are the same.
  * Vasya wants to construct the minimal number of towers from the bars. Help Vasya to use the bars in the best way possible.
@@ -8,6 +9,11 @@
  * Output:
  * In one line output two numbers, the height of the largest tower and their total number. Remember that Vasya should use all the bars.
  * SOURCE: http://codeforces.com/problemset/problem/37/A?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo scorre l'array delle lunghezze e memorizza solo le occorrenze di ciascuna lunghezza.
+ * Scorre l'array delle occorrenze e conta quante sono diverse da 0, numero di torri, e memorizza qual è il valore massimo, l'altezza.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
