@@ -1,4 +1,5 @@
-/* Given an array containing both negative and positive integers. Find the contiguous sub-array with maximum sum.
+/* PROBLEM
+ * Given an array containing both negative and positive integers. Find the contiguous sub-array with maximum sum.
  * Input:
  * The first line of input contains an integer T denoting the number of test cases.
  * The first line of each test case contains a single integer N denoting the size of array.
@@ -6,6 +7,11 @@
  * Output:
  * Print the maximum sum of the contiguous sub-array in a separate line for each test case.
  * SOURCE: https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0
+ *
+ * SOLUTION
+ * L'algoritmo scorre l'array tenendo in memoria il massimo (max) raggiunto fino a quel punto e il massimo (curr) raggiunto
+ * dall'ultimo suffisso di numeri positivi.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
