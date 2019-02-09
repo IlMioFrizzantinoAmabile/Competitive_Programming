@@ -1,4 +1,5 @@
-/* Given an array of positive integers. The task is to find the leaders in the array.
+/* PROBLEM
+ * Given an array of positive integers. The task is to find the leaders in the array.
  * An element of array is leader if it is greater than or equal to all the elements to its right side.
  * Input:
  * The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.
@@ -7,6 +8,10 @@
  * Output:
  * Print all the leaders.
  * SOURCE: https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0
+ *
+ * SOLUTION
+ * L'algoritmo scorre l'array partendo da destra, tenendo in memoria il massimo (max) raggiunto fino a quel punto.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
