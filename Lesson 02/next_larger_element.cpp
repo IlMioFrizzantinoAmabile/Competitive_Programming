@@ -1,4 +1,5 @@
-/* Given an array A of size N having distinct elements,
+/* PROBLEM
+ * Given an array A of size N having distinct elements,
  * the task is to find the next greater element for each element of the array in order of their appearance in the array.
  * If no such element exists, output -1
  * Input:
@@ -9,6 +10,16 @@
  * Output:
  * For each test case, print in a new line, the next greater element for each array element separated by space in order.
  * SOURCE: https://practice.geeksforgeeks.org/problems/next-larger-element/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza una stack che contiene posizioni nell'array, queste sono le posizioni già superate che ancora non hanno un
+ * output al problema.
+ * In ogni momento i valori dell'array relativi alle posizioni salvate nello stack sono crescenti rispetto all'ordine nello stack.
+ * L'algoritmo scorre l'array (num[]) e ad ogni passo assegna l'output a tutte le posizioni precedenti che hanno un valore minore
+ * di quello in considerazione e che non hanno già un output assegnato.
+ * Alla fine si assegna -1 a tutti gli elementi che ancora non hanno un output assegnato.
+ * Ogni elemento entra/esce dallo stack esattamente una volta.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
