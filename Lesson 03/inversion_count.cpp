@@ -1,4 +1,5 @@
-/* Let A[0...n - 1] be an array of n distinct positive integers.
+/* PROBLEM
+ * Let A[0...n - 1] be an array of n distinct positive integers.
  * If i < j and A[i] > A[j] then the pair (i, j) is called an inversion of A.
  * Given n and an array A your task is to find the number of inversions of A.
  * Input:
@@ -8,6 +9,10 @@
  * Output:
  * For every test output one line giving the number of inversions of A.
  * SOURCE: https://www.spoj.com/problems/INVCNT/
+ *
+ * SOLUTION
+ * L'algoritmo funziona esattamente come un MergeSort ma in più ad ogni passaggio conta il numero di scambi, la complessità non aumenta.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
