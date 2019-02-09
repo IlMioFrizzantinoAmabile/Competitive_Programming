@@ -1,11 +1,17 @@
 /* Given an array, write a program that prints 1 if given array can represent preorder traversal of a BST, else prints 0.
  * Input:
  * The first line of input contains an integer T denoting the number of test cases.
- * The first line of each test case is N,N is the size of array.
+ * The first line of each test case is N, the size of array.
  * The second line of each test case contains N input A[i].
  * Output:
  * Should print 1 if given array can represent preorder traversal of BST. Otherwise 0.
  * SOURCE: https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst/0
+ *
+ * SOLUTION
+ * L'algoritmo fissa il primo elemento dell'array come radice e verifica che sia possibile dividere il resto dell'array in due
+ * intervalli in modo che gli elementi del primo (left_branch=1) siano minori di radice, e gli elementi del secondo (left_branch=0) siano maggiori.
+ * Fatto questo richiama se stessa ricorsivamente sui due intervalli trovati.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
