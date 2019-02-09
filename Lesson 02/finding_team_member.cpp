@@ -1,4 +1,5 @@
-/* There is a programing contest named SnakeUp, 2n people want to compete for it.
+/* PROBLEM
+ * There is a programing contest named SnakeUp, 2n people want to compete for it.
  * In order to attend this contest, people need to form teams of exactly two people.
  * You are given the strength of each possible combination of two people. All the values of the strengths are distinct.
  * Every contestant hopes that he can find a teammate so that their team’s strength is as high as possible.
@@ -13,6 +14,10 @@
  * Output:
  * Print a line containing 2n numbers. The i-th number should represent the number of teammate of i-th person.
  * SOURCE: http://codeforces.com/problemset/problem/579/B?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo sorta le coppie in ordine di strenght decrescente, dopodiché scorre dall'inizio e assegna le coppie non ancora assegnate.
+ * COMPLEXITY: O(n^2*log(n))
  */ 
 
 #include<bits/stdc++.h>
