@@ -1,4 +1,5 @@
-/* Valera has 2·n cubes, each cube contains an integer from 10 to 99. He arbitrarily chooses n cubes and puts them in the first heap.
+/* PROBLEM
+ * Valera has 2·n cubes, each cube contains an integer from 10 to 99. He arbitrarily chooses n cubes and puts them in the first heap.
  * The remaining cubes form the second heap. 
  * Valera decided to play with cubes. During the game he takes a cube from the first heap and writes down the number it has.
  * Then he takes a cube from the second heap and write out its two digits near two digits he had written (to the right of them). 
@@ -14,6 +15,14 @@
  * In the second line print 2·n numbers bi (1 ≤ bi ≤ 2). The numbers mean: the i-th cube belongs to the bi-th heap in your division.
  * If there are multiple optimal ways to split the cubes into the heaps, print any of them.
  * SOURCE: http://codeforces.com/problemset/problem/353/B?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo memorizza le occorrenze di ciascun numero.
+ * Computa i numeri che occorrono almeno 2 volte, assegnandone metà al primo heap e metà al secondo heap, in caso di disparità
+ * ne assegna uno in più a quello che contiene meno elementi.
+ * Computa i numeri che occorrono 1 volta, assegnandoli ogni volta all'heap che contiene meno elementi.
+ * Questa strategia garantisce di massimizzare il risultato.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
