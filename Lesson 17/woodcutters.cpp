@@ -1,4 +1,5 @@
-/* Little Susie listens to fairy tales before bed every day. 
+/* PROBLEM
+ * Little Susie listens to fairy tales before bed every day. 
  * Today's fairy tale was about wood cutters and the little girl immediately started imagining the choppers cutting wood.
  * She imagined the situation that is described below.
  * There are n trees located along the road at points with coordinates x1, x2, ..., xn. Each tree has its height hi.
@@ -14,6 +15,10 @@
  * Output:
  * Print a single number, the maximum number of trees that you can cut down by the given rules.
  * SOURCE: http://codeforces.com/contest/545/problem/C
+ *
+ * SOLUTION
+ * L'algoritmo greedy processa gli alberi in ordine, li fa cadere a sinistra se può, altrimenti a destra, se può.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
