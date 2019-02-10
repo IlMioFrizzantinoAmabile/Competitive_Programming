@@ -1,5 +1,11 @@
-/* Course Exam, 23/01/2018
+/* PROBLEM
+ * Course Exam, 23/01/2018
  * SOURCE: https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text23012018.pdf
+ *
+ * SOLUTION
+ * L'algoritmo memorizza in un Fenwick Tree di quanto viene "traslata" ogni posizione, cioè si ricorda in quale posizione di A[] 
+ * dovrà andare a leggere il valore di B[i]
+ * COMPLEXITY: O(n+m*log(n))
  */
 
 #include<bits/stdc++.h>
