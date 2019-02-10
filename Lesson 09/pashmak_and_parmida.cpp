@@ -1,4 +1,5 @@
-/* Parmida is a clever girl and she wants to participate in Olympiads this year.
+/* PROBLEM
+ * Parmida is a clever girl and she wants to participate in Olympiads this year.
  * Of course she wants her partner to be clever too (although he's not)! Parmida has prepared the following test problem for Pashmak.
  * There is a sequence a that consists of n integers a1, a2, ..., an. 
  * Let's denote f(l, r, x) the number of indices k such that: l ≤ k ≤ r and ak = x.
@@ -9,6 +10,13 @@
  * Output:
  * Print a single integer, the answer to the problem.
  * SOURCE: http://codeforces.com/problemset/problem/459/D?locale=en
+ *
+ * SOLUTION
+ * La funzione remap() riscala i valori nel range [0,n] e ne calcola la cardinalità come insieme.
+ * L'array counter[] memorizza le occorrenze di ogni valore. L'array suffixCounter[] memorizza il valore f(j,n,aj) in poizione j.
+ * Con un altro ciclo, con la stessa strategia, ad ogni passo counter[vet[i]] memorizza il valore di f(1,i,ai).
+ * Grazie ad un fenwick tree di computa la risposta in tempo logaritmico.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
@@ -64,7 +72,7 @@ int main(){
 	int cardinalita = remap(vet);
 	int counter[cardinalita], suffixCounter[n];
 	for (int i=0;i<cardinalita;i++)	counter[i]=0;
-	for (int i=0;i<n;i++)			suffixCounter[i]=0;
+	for (int i=0;i<n;i++)		suffixCounter[i]=0;
 	fenwick_tree BIT(n);
 	for (int i=n-1;i>=0;i--) {
 		counter[vet[i]]++;
