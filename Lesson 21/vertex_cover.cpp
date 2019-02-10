@@ -1,4 +1,5 @@
-/* You are given an unweighted, undirected tree.
+/* PROBLEM
+ * You are given an unweighted, undirected tree.
  * The task is to find a vertex set of minimum size in this tree such that each edge has as least one of its end-points in that set.
  * Input:
  * The first line of the input file contains one integer N, number of nodes in the tree. 
@@ -7,6 +8,11 @@
  * Output:
  * Print number of nodes in the satisfied vertex set on one line.
  * SOURCE: https://www.spoj.com/problems/PT07X/
+ *
+ * SOLUTION
+ * L'algoritmo utilizza una DFS modificata che per ogni nodo restituisce i due valori di minimo nei due casi in cui il nodo viene preso
+ * oppure no.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
