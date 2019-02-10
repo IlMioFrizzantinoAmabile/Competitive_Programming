@@ -1,4 +1,5 @@
-/* Given a set of numbers, 
+/* PROBLEM
+ * Given a set of numbers, 
  * check whether it can be partitioned into two subsets such that the sum of elements in both subsets is same or not.
  * Input:
  * The first line contains an integer 'T' denoting the total number of test cases. 
@@ -7,6 +8,10 @@
  * Output:
  * Print YES if the given set can be partioned into two subsets such that the sum of elements in both subsets is equal, else print NO.
  * SOURCE: https://practice.geeksforgeeks.org/problems/subset-sum-problem/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza la programmazione dinamica risolvendo i sottoproblemi dati dai primi i oggetti e con somme minori.
+ * COMPLEXITY: O(N*sum)
  */
 
 #include<bits/stdc++.h>
@@ -17,12 +22,12 @@ bool tab[102][100300];
 
 bool subsetSum(int* set, int n, int sum) {
 	for (int i=0;i<=n;i++) for (int j=0;j<=sum;j++) {
-		if (i==0)			tab[i][j]=false;
+		if (i==0)		tab[i][j]=false;
 		else if (j==0)		tab[i][j]=true;
 		else {
 			int leftJ = j-set[i-1];
 			if (leftJ<0)	tab[i][j] = tab[i-1][j];
-			else 			tab[i][j] = tab[i-1][j] or tab[i-1][leftJ];
+			else 		tab[i][j] = tab[i-1][j] or tab[i-1][leftJ];
 		}
 	}
 	return tab[n][sum];
