@@ -1,4 +1,5 @@
-/* Your city has n junctions. There are m one-way roads between the junctions. As a mayor of the city, you have to ensure the 
+/* PROBLEM
+ * Your city has n junctions. There are m one-way roads between the junctions. As a mayor of the city, you have to ensure the 
  * security of all the junctions. To ensure the security, you have to build some police checkposts. Checkposts can only be built 
  * in a junction. A checkpost at junction i can protect junction j if either i = j or the police patrol car can go to j from i 
  * and then come back to i.
@@ -18,6 +19,14 @@
  * The first one is the minimum possible money needed to ensure the security of all the junctions.
  * And the second one is the number of ways you can ensure the security modulo 1000000007.
  * SOURCE: http://codeforces.com/problemset/problem/427/C?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo calcola in numero di componenti fortemente connesse. 
+ * Per farlo lancia una DFS che memorizza i finishing time per ogni nodo.
+ * Dopodichè fa partire una reverseDFS per ogni nodo (non già visitato) in ordine decrescente del finishing time calcolato prima.
+ * La particolare struttura di queste DFS garantisce che verrà chiamata esattamente una reverseDFS per ogni SCC (strongly connected component).
+ * Ottenunte le componenti fortemente connesse trovare il costo minimo e il numero di modi è un semplice conto.
+ * COMPLEXITY: O(n+m)
  */
 
 #include<bits/stdc++.h>
