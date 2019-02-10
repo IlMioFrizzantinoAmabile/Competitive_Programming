@@ -1,4 +1,5 @@
-/* Given a sequence, find the length of the longest increasing subsequence from a given sequence .
+/* PROBLEM
+ * Given a sequence, find the length of the longest increasing subsequence from a given sequence .
  * The longest increasing subsequence means to find a subsequence of a given sequence in which the subsequence's elements are
  * in sorted order, lowest to highest, and in which the subsequence is as long as possible.
  * This subsequence is not necessarily contiguous, or unique.
@@ -9,6 +10,12 @@
  * Output:
  * Print the Max length of the subsequence in a separate line.
  * SOURCE: https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza la programmazione dinamica risolvendo i sottoproblemi dati dai prefissi.
+ * Inoltre il passaggio da un prefisso al successivo ha costo logaritmico anzichè lineare (nella lunghezza del prefisso) grazie
+ * ad una binary search.
+ * COMPLEXITY: O(N*log(N))
  */
 
 #include<bits/stdc++.h>
