@@ -1,4 +1,5 @@
-/* An array of positive integers a1, a2, ..., an is given. 
+/* PROBLEM
+ * An array of positive integers a1, a2, ..., an is given. 
  * Let us consider its arbitrary subarray al, al + 1..., ar, where 1 ≤ l ≤ r ≤ n.
  * For every positive integer s denote by Ks the number of occurrences of s into the subarray.
  * We call the power of the subarray the sum of products Ks·Ks·s for every positive integer s.
@@ -11,6 +12,11 @@
  * Output:
  * Print t lines, the i-th line of the output should contain single positive integer, the power of the i-th query subarray.
  * SOURCE: http://codeforces.com/contest/86/problem/D
+ *
+ * SOLUTION
+ * Il programma utilizza l'algoritmo di MOs, sorta le query dividendole in sqrtN blocchi da sqrtN elementi ciascuno.
+ * Questo particolare ordine delle query garantisce un limite al numero di volte che vengono chiamate le funzioni add e remove.
+ * COMPLEXITY: O(sqrt(n)*(t+n))
  */
 
 #include<bits/stdc++.h>
