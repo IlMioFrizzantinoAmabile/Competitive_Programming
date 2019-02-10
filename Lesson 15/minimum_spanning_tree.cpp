@@ -1,4 +1,4 @@
-/* KRUSKAL ALGORITHM
+/* PROBLEM
  * The task is to find the minimum spanning tree of the graph.
  * Input:
  * On the first line there will be two integers N, the number of nodes and M, the number of edges. (1 <= N <= 10000), (1 <= M <= 100000)
@@ -7,6 +7,10 @@
  * Output:
  * Single number representing the total weight of the minimum spanning tree on this graph. There will be only one possible MST.
  * SOURCE: https://www.spoj.com/problems/MST/
+ *
+ * SOLUTION
+ * Il programma implementa il ben noto algoritmo di Kruskal.
+ * COMPLEXITY: O(M*log(M))
  */
 
 #include<bits/stdc++.h>
