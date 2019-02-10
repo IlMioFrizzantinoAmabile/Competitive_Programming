@@ -1,5 +1,11 @@
-/* Course Exam, 14/02/2018
+/* PROBLEM
+ * Course Exam, 14/02/2018
  * SOURCE: https://github.com/rossanoventurini/CompetitiveProgramming/blob/master/Exams/Text14022018.pdf
+ *
+ * SOLUTION
+ * L'algoritmo utilizza due Fenwick Tree (BITlow e BIThigh) per memorizzare negli array lower[] e higher[] le risposte al problema
+ * ristretto alle coppie, i.e lower[j] memorizza il numero di indici i tali che A[i]<A[j]
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
