@@ -1,4 +1,5 @@
-/* The "BerCorp" company has got n employees. These employees can use m approved official languages for the formal correspondence.
+/* PROBLEM
+ * The "BerCorp" company has got n employees. These employees can use m approved official languages for the formal correspondence.
  * The languages are numbered with integers from 1 to m. For each employee we have the list of languages, which he knows.
  * This list could be empty, i. e. an employee may know no official languages. But the employees are willing to learn any number
  * of official languages, as long as the company pays their lessons. A study course in one language for one employee costs 1 berdollar.
@@ -15,6 +16,14 @@
  * Print a single integer — the minimum amount of money to pay so that in the end every employee could write a letter to every
  * other one (other employees can help out translating).
  * SOURCE: http://codeforces.com/problemset/problem/277/A?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo riporta il problema a un grafo, in cui i nodi sono gli employees e un arco esiste se e solo se i due employees parlano
+ * almeno una lingua in comune.
+ * Fatto questo il problema si riduce a trovare il numero di componenti connesse del grafo. La risposta al problema sarà il numero di
+ * archi necessari a connettere tutto, cioè numero di componenti connesse - 1.
+ * Trascurando il tempo necessario a leggere i dati, l'algoritmo va in tempo lineare nel numero di employees.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
@@ -54,7 +63,7 @@ int main(){
 	for (int employee=0;employee<n;employee++) {
 		int numOfLan;
 		cin>>numOfLan;
-		atLeastOneLan = atLeastOneLan or (numOfLan>0);
+		atLeastOneLan = atLeastOneLan or (numOfLan>0); //if nobody speak any languages it is a special case
 		while (numOfLan--) {
 			int language;
 			cin>>language;
