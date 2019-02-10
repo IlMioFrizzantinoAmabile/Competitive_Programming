@@ -1,4 +1,5 @@
-/* A magic number is a number formed by concatenation of numbers 1, 14 and 144. We can use each of these numbers any number of times.
+/* PROBLEM
+ * A magic number is a number formed by concatenation of numbers 1, 14 and 144. We can use each of these numbers any number of times.
  * Therefore 14144, 141414 and 1411 are magic numbers but 1444, 514 and 414 are not.
  * You're given a number. Determine if it is a magic number or not.
  * Input:
@@ -6,6 +7,10 @@
  * Output:
  * Print "YES" if n is a magic number or print "NO" if it's not.
  * SOURCE: http://codeforces.com/problemset/problem/320/A
+ *
+ * SOLUTION
+ * Banale aritmetica 
+ * COMPLEXITY: O(log(n))
  */
 
 #include<bits/stdc++.h>
