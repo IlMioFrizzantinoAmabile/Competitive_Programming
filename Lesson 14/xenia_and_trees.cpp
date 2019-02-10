@@ -1,4 +1,5 @@
-/* Xenia the programmer has a tree consisting of n nodes. We will consider the tree nodes indexed from 1 to n.
+/* PROBLEM
+ * Xenia the programmer has a tree consisting of n nodes. We will consider the tree nodes indexed from 1 to n.
  * We will also consider the first node to be initially painted red, and the other nodes — to be painted blue.
  * The distance between two tree nodes v and u is the number of edges in the shortest path between v and u.
  * Xenia needs to learn how to quickly execute queries of two types:
@@ -15,6 +16,10 @@
  * Output:
  * For each second type query print the reply in a single line.
  * SOURCE: http://codeforces.com/problemset/problem/342/E
+ *
+ * SOLUTION
+ * L'algoritmo fa una Centroid Decomposition del grafo e la utilizza per svolgere le query in tempo logaritmico.
+ * COMPLEXITY: O((m+n)*log(n)^2)
  */
 
 #include<bits/stdc++.h>
