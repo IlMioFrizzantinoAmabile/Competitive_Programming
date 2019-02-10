@@ -1,4 +1,5 @@
-/* Given an array of integers where each element represents the max number of steps that can be made forward from that element.
+/* PROBLEM
+ * Given an array of integers where each element represents the max number of steps that can be made forward from that element.
  * Write a function to return the minimum number of jumps to reach the end of the array (starting from the first element). 
  * If an element is 0, then cannot move through that element.
  * Input: 
@@ -8,6 +9,11 @@
  * Output:
  * Each seperate line showing the minimum number of jumps. If answer is not possible print -1.
  * SOURCE: https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0
+ *
+ * SOLUTION
+ * L'algoritmo scorre l'array tenendo in memoria il numero di salti fatti (jump), il numero di passi rimanenti dell'ultimo salto (step)
+ * e la distanza massima raggiungibile senza fare altri salti (maxReach). Grazie a questo risolve il problema in tempo lineare.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
