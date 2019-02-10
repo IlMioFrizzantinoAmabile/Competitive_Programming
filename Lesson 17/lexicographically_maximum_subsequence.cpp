@@ -1,4 +1,5 @@
-/* You've got string s, consisting of only lowercase English letters. Find its lexicographically maximum subsequence.
+/* PROBLEM
+ * You've got string s, consisting of only lowercase English letters. Find its lexicographically maximum subsequence.
  * We'll call a non-empty string s[p1p2... pk] = sp1sp2... spk(1 ≤ p1 < p2 < ... < pk ≤ |s|) a subsequence of string s = s1s2... s|s|.
  * String x = x1x2... x|x| is lexicographically larger than string y = y1y2... y|y|, 
  * if either |x| > |y| and x1 = y1, x2 = y2, ... , x|y| = y|y|,
@@ -9,6 +10,11 @@
  * Output:
  * Print the lexicographically maximum subsequence of string s.
  * SOURCE: http://codeforces.com/problemset/problem/196/A
+ *
+ * SOLUTION
+ * L'algoritmo scorre la stringa una prima volta contando le occorrenze (occ[]) di ciascun carattere.
+ * La scorre di nuovo aggiungendo un carattere all'output se e solo se non ci sono occorrenze 
+ * COMPLEXITY: O(lenght)
  */
 
 #include<bits/stdc++.h>
