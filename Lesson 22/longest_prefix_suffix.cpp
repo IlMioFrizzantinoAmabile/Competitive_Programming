@@ -1,10 +1,16 @@
-/* Given a string of character, find the length of longest proper prefix which is also a proper suffix.
+/* PROBLEM
+ * Given a string of character, find the length of longest proper prefix which is also a proper suffix.
  * Input:
  * First line is T number of test cases. 1<=T<=100.
  * Each test case has one line denoting the string of length less than 100000.
  * Output:
  * Print length of longest proper prefix which is also a proper suffix.
  * SOURCE: https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza una sorta di programmazione dinamica, calcolando la risposta al problema per ogni suffisso della stringa.
+ * Avendo i risultati di tutti i sottoproblemi precedenti, un incremento costa tempo costante ammortizzato.
+ * COMPLEXITY: O(lenght)
  */
 
 #include<bits/stdc++.h>
