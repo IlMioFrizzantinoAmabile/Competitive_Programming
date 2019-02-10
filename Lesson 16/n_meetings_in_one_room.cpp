@@ -1,4 +1,5 @@
-/* There is one meeting room in Flipkart.
+/* PROBLEM
+ * There is one meeting room in Flipkart.
  * There are n meetings in the form of (S[i], F[i]) where S[i] is start time of meeting i and F[i] is finish time of meeting i.
  * What is the maximum number of meetings that can be accommodated in the meeting room ?
  * Input:
@@ -9,6 +10,10 @@
  * Output:
  * In each separate line print the order in which the meetings take place separated by a space.
  * SOURCE: https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0
+ *
+ * SOLUTION
+ * L'algoritmo sorta i meeting per finishing time crescente e poi li processa dall'inizio con strategia greedy.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
