@@ -1,4 +1,5 @@
-/* You are given n segments on a line. There are no ends of some segments that coincide.
+/* PROBLEM
+ * You are given n segments on a line. There are no ends of some segments that coincide.
  * For each segment find the number of segments it contains.
  * Input:
  * The first line contains a single integer n, the number of segments on a line.
@@ -6,7 +7,14 @@
  * It is guaranteed that there are no ends of some segments that coincide.
  * Output:
  * Print n lines. The j-th of them should contain the only integer aj — the number of segments contained in the j-th segment.
- * SOURCE: http://codeforces.com/problemset/problem/652/D?locale=en
+ * SOURCE: http://codeforces.com/problemset/problem/652/D
+ *
+ * SOLUTION
+ * L'algoritmo sorta i segmenti per endpoint e riscala questi ultimi nell'intervallo [1,n].
+ * Sorta i segmenti per startpoint, in ordine decrescente.
+ * Scorrendoli trova il risultato come somma di 1 sui segmenti già processati (i.e. che iniziano dopo) e con endpoint minore.
+ * Somma e update avvengono con un fenwick tree.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
