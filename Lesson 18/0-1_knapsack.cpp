@@ -1,4 +1,5 @@
-/* You are given weights and values of N items, put these items in a knapsack of capacity W to get the maximum total value in the 
+/* PROBLEM
+ * You are given weights and values of N items, put these items in a knapsack of capacity W to get the maximum total value in the 
  * knapsack. Note that we have only one quantity of each item, In other words, given two integer arrays val[0..N-1] and wt[0..N-1]
  * which represent values and weights associated with N items respectively.
  * Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights
@@ -13,6 +14,11 @@
  * Output:
  * Print the maximum possible value you can get with the given conditions that you can obtain for each test case in a new line.
  * SOURCE: https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza la programmazione dinamica e risolve i sottoproblemi dati dall'utilizzare solo i primi i oggetti, che vanno
+ * quindi ordinati, e i pesi compresi tra 0 e W.
+ * COMPLEXITY: O(N*W)
  */
 
 #include<bits/stdc++.h>
