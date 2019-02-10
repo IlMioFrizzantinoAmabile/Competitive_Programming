@@ -1,4 +1,5 @@
-/* Given an array of positive integers. The task is to print the maximum length of Bitonic subsequence. 
+/* PROBLEM
+ * Given an array of positive integers. The task is to print the maximum length of Bitonic subsequence. 
  * A subsequenceof array is called Bitonic if it is first increasing, then decreasing.
  * Input:
  * First line contains T test cases.
@@ -7,6 +8,12 @@
  * Output:
  * Single line output, print the longest bitonic sequence.
  * SOURCE: https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza la programmazione dinamica insieme ad un'astuta binary search per calcolare i longest increasing subsequence
+ * per ogni prefisso. Inverte l'array e con la stessa strategia calcola i longest decreasing subsequence per i suffissi.
+ * Fatto ciò scorre un'ultima volta l'array e trova la soluzione in tempo lineare.
+ * COMPLEXITY: O(N*log(N))
  */
 
 #include<bits/stdc++.h>
