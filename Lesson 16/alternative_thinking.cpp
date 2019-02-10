@@ -1,4 +1,5 @@
-/* Kevin has just recevied his disappointing results on the USA Identification of Cows Olympiad (USAICO) in the form of a binary 
+/* PROBLEM
+ * Kevin has just recevied his disappointing results on the USA Identification of Cows Olympiad (USAICO) in the form of a binary 
  * string of length n. Each character of Kevin's string represents Kevin's score on one of the n questions of the olympiad: 
  * '1' for a correctly identified cow and '0' otherwise.
  * However, all is not lost. Kevin is a big proponent of alternative thinking and believes that his score, instead of being the sum
@@ -15,6 +16,11 @@
  * Print a single integer, the length of the longest possible alternating subsequence that Kevin can create in his string after flipping
  * a single substring.
  * SOURCE: http://codeforces.com/problemset/problem/603/A
+ *
+ * SOLUTION
+ * L'algoritmo conta semplicemente il numero di indici nei quali il punteggio cambia. Questa + 1 sarà la lunghezza della massima
+ * sottostringa alternante. Il flip che può fare Kevin ha semplicemente l'effetto di incrementare di 2 il suo punteggio.
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
