@@ -1,4 +1,5 @@
-/* You have a rooted tree consisting of n vertices. Each vertex of the tree has some color.
+/* PROBLEM
+ * You have a rooted tree consisting of n vertices. Each vertex of the tree has some color.
  * We will assume that the tree vertices are numbered by integers from 1 to n. Then we represent the color of vertex v as cv.
  * The tree root is a vertex with number 1.
  * In this problem you need to answer to m queries. Each query is described by two integers vj, kj.
@@ -13,6 +14,11 @@
  * Output:
  * Print m integers — the answers to the queries in the order the queries appear in the input.
  * SOURCE: http://codeforces.com/contest/375/problem/D
+ *
+ * SOLUTION
+ * L'algoritmo tramite una DFS riporta l'albero in un array, mantenendo le proprietà dei sottoalberi.
+ * Dopodichè grazie all'algoritmo di MOs sorta le query in modo ottimale.
+ * COMPLEXITY: O(sqrt(n)*(n+m))
  */
 
 #include<bits/stdc++.h>
