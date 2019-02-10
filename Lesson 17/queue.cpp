@@ -1,4 +1,5 @@
-/* In the Main Berland Bank n people stand in a queue at the cashier,
+/* PROBLEM
+ * In the Main Berland Bank n people stand in a queue at the cashier,
  * everyone knows his/her height hi, and the heights of the other people in the queue.
  * Each of them keeps in mind number ai — how many people who are taller than him/her and stand in queue in front of him.
  * After a while the cashier has a lunch break and the people in the queue seat on the chairs in the waiting room in a random order.
@@ -19,6 +20,11 @@
  * Print the people in the order in which they stand in the queue, starting from the head of the queue and moving to its tail.
  * Numbers hi are not necessarily unique.
  * SOURCE: http://codeforces.com/problemset/problem/141/C
+ *
+ * SOLUTION
+ * L'algoritmo processa le persone in ordine crescente di numero di persone viste davanti, li inserisce nell'array ordine[] in modo
+ * che la persona i venga inserita con esattamente ai persone già inserite alla sua destra.
+ * COMPLEXITY: O(n*log(n))
  */
 
 #include<bits/stdc++.h>
