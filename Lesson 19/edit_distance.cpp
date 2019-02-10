@@ -1,4 +1,5 @@
-/* Given two strings str1 and str2 and below operations that can performed on str1.
+/* PROBLEM
+ * Given two strings str1 and str2 and below operations that can performed on str1.
  * Find minimum number of edits (operations) required to convert ‘str1′ into ‘str2′.
  * -Insert
  * -Remove
@@ -13,6 +14,10 @@
  * Output:
  * Corresponding to each test case, pirnt in a new line, the minimum number of operations required.
  * SOURCE: https://practice.geeksforgeeks.org/problems/edit-distance/0
+ *
+ * SOLUTION
+ * L'algoritmo utilizza la programmazione dinamica risolvendo i sottoproblemi dati dai prefissi delle stringhe
+ * COMPLEXITY: O(P*Q)
  */
 
 #include<bits/stdc++.h>
@@ -23,7 +28,7 @@ int tab[102][102];
 
 int editDistance(string s, string t) {
 	for (int i=0;i<=s.length();i++) for (int j=0;j<=t.length();j++) {
-		if (i==0 or j==0) tab[i][j] = max(i,j);
+		if (i==0 or j==0) 		tab[i][j] = max(i,j);
 		else if (s[i-1]==t[j-1])	tab[i][j] = tab[i-1][j-1];
 		else {
 			int up = tab[i-1][j];
