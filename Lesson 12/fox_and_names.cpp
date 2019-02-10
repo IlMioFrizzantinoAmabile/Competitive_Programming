@@ -1,4 +1,5 @@
-/* Fox Ciel is going to publish a paper on FOCS (Foxes Operated Computer Systems, pronounce: "Fox").
+/* PROBLEM
+ * Fox Ciel is going to publish a paper on FOCS (Foxes Operated Computer Systems, pronounce: "Fox").
  * She heard a rumor: the authors list on the paper is always sorted in the lexicographical order.
  * After checking some examples, she found out that sometimes it wasn't true.
  * On some papers authors' names weren't sorted in lexicographical order in normal sense.
@@ -17,6 +18,14 @@
  * of characters 'a'–'z' (i. e. first output the first letter of the modified alphabet, then the second, and so on).
  * Otherwise output a single word "Impossible" (without quotes).
  * SOURCE: http://codeforces.com/problemset/problem/510/C?locale=en
+ *
+ * SOLUTION
+ * L'algoritmo da ogni coppia di parole consecutive deduce un ordinamento tra lettere, le prime diverse.
+ * Così facendo si trasforma facilmente il problema originario in un problema su un grafo, in cui i nodi sono le lettere e gli
+ * archi sono gli ordinamenti. Il problema diventa chiedersi se questo grafo è un DAG.
+ * Un possibile ordine dell'alfabeto, se esiste, sarà quindi dato da un qualsiasi possibile ordinamento dei nodi nel DAG.
+ * Assumiamo che la cardinalità dell'alfabeto sia costante (=26 nel nostro caso).
+ * COMPLEXITY: O(n)
  */
 
 #include<bits/stdc++.h>
