@@ -1,4 +1,5 @@
-/* Given N * M string array of O's and X's return the number of 'X' total shapes.
+/* PROBLEM
+ * Given N * M string array of O's and X's return the number of 'X' total shapes.
  * 'X' shape consists of one or more adjacent X's (diagonals not included).
  * Example (1):
  * OOOXOOO
@@ -23,6 +24,11 @@
  * Output:
  * Print number of shapes.
  * SOURCE: https://practice.geeksforgeeks.org/problems/x-total-shapes/0
+ *
+ * SOLUTION
+ * L'algoritmo calcola il numero di componenti connesse di 'X'.
+ * Per farlo utilizza la struttura dati Union-Find, che garantisce tempo costante ammortizzato per ogni operazione.
+ * COMPLEXITY: O(N*M)
  */
 
 #include<bits/stdc++.h>
