@@ -1,4 +1,5 @@
-/* You are given two strings A and B of the same length. 
+/* PROBLEM
+ * You are given two strings A and B of the same length. 
  * Each string contains N Lower case Latin character (from 'a' to 'z'). 
  * A shift operation will remove the first character of a string and add the same character at the end of that string.
  * For example after you perform a shift operation on a string 'abcd', the new string will be 'bcda'.
@@ -10,6 +11,10 @@
  * Output:
  * Contains a single integer which is the number of shift operations.
  * SOURCE: https://www.codechef.com/problems/TASHIFT
+ *
+ * SOLUTION
+ * L'algoritmo è il Knuth-Morris-Pratt che utilizza il longest prefix suffix array
+ * COMPLEXITY: O(N)
  */
 
 #include<bits/stdc++.h>
